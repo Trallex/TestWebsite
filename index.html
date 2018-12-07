@@ -11,22 +11,32 @@
         <link rel = "stylesheet" type="text/css" href = "stylesheet.css"> 
     </head>
     <body>
+       <button id="showBtn" onclick="showMenu()">Menu</button>
+       
         <header>
-            
+            This is the site about life during Erasmus programe.
         </header>
-        <nav>
+        
+        <nav id="menu">
             <ul>
-                <li></li>
-                <li></li>
+                <li><a href="our_advices.html" target="content">Our advices</a></li>
+                <li><a href="our_erasmus.html" target="content">Our Erasmus</a></li>
             </ul>
         </nav>
         
         <article>
-            
+            <iframe name="content" frameborder="0"></iframe>
         </article>
         
         <footer>
             <p>Developed by Jakub Kucharz and Justynka Kozik (A42618, A42552).</p>
         </footer>
+        
+        <script>
+            function showMenu(){
+                document.getElementById("menu").style.display="block";    
+            }
+            
+        </script> 
     </body>
 </html>

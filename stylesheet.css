@@ -1,0 +1,13 @@
+#showBtn{
+    float: left;
+    position: relative;
+    height: 10vw;
+    width:  10vw;
+    background-color: antiquewhite;
+}
+#showBtn:active{
+    background-color: aqua;
+}
+#menu {
+  display: none;
+}
