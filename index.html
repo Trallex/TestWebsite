@@ -11,17 +11,33 @@
         <link rel = "stylesheet" type="text/css" href = "stylesheet.css"> 
     </head>
     <body>
-       <button id="showBtn" onclick="showMenu()">Menu</button>
-       
+       <div id="divMenuButton">
+           <button id="showBtn" onclick="showMenu()">Menu</button>
+       </div>
         <header>
             This is the site about life during Erasmus programe.
         </header>
         
         <nav id="menu">
+           <button id="hideBtn" onclick="hideMenu()">X</button>
             <ul>
-                <li><a href="our_advices.html" target="content">Our advices</a></li>
-                <li><a href="our_erasmus.html" target="content">Our Erasmus</a></li>
+                <li id="advices"><a href="/our_advices/our_advices.html" target="content">Our advices</a>
+                    <ul id="advicesAdditional">
+                        <li><a href="/our_advices/before_erasmus.html">Before Erasmus</a></li>
+                        <li><a href="/our_advices/survival_guide.html">Survival Guide</a></li>
+                        <li><a href="/our_advices/travelling_guide.html">Travelling Guide</a></li>
+                        <li><a href="/our_advices/people.html">People</a></li>
+                    </ul>
+                </li>
+                <li id="erasmus"><a href="/our_erasmus/our_erasmus.html" target="content">Our Erasmus</a>
+                    <ul id="erasmusAdditional">
+                        <li><a href="/our_erasmus/photos.html">Photos</a></li>
+                        <li><a href="/our_erasmus/events.html">Events</a></li>
+                    </ul>
+                </li>
+                <li><a href="useful_links.html">Useful Links</a></li>
             </ul>
+            
         </nav>
         
         <article>
@@ -36,7 +52,9 @@
             function showMenu(){
                 document.getElementById("menu").style.display="block";    
             }
-            
+            function hideMenu(){
+                document.getElementById("menu").style.display="none";
+            }
         </script> 
     </body>
 </html>
