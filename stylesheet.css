@@ -14,7 +14,7 @@ body{
     background-color: antiquewhite;
 }
 #showBtn:active{
-    background-color: aqua;
+    background-color: aquamarine;
 }
 header{
     float: left;
@@ -56,6 +56,10 @@ article{
     width: 100%;
     height: 80%;
 } 
+iframe{
+    width: 100%;
+    height: 100%;
+}
 footer{
     float: left;
     text-align: center;
@@ -65,4 +69,8 @@ footer{
 }
 #menu {
   display: none;
+}
+h1, h2{
+    text-align: center;
+    text-decoration: underline;
 }
