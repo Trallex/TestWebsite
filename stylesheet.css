@@ -1,13 +1,76 @@
+@media only screen and (max-width: 800px){
+    #divMenuButton{
+        float: left;
+        position: sticky;
+        height: 10%;
+        width:  10%;
+    }
+    nav{
+        width: 30%;
+        height: 100%;
+        font-size: 20px;
+        position: absolute;
+    }
+    #menu {
+      display: none;
+    }
+    header{
+        width: 90%;
+        height: 10%;
+        font-size: 28px;
+    }
+    #hideBtn{
+        float: right;
+        width: 25%;
+        height: 10%
+    }
+    article{
+        width: 100%;
+        height: 80%;
+    }    
+    footer{
+        width: 100%;
+        height: 10%;
+    }   
+}
+@media only screen and (min-width: 800px){
+    #divMenuButton{
+        display: none;
+    }
+    nav{
+        display: block;
+        width: 30%;
+        height: 60%;
+        font-size: 26px;
+        position: sticky;
+        
+    }
+    #menu{
+        display: block;
+    }
+    #hideBtn{
+        display: none;
+    }
+    header{
+        width: 70%;
+        height: 10%;
+        font-size: 32px;
+    }
+    article{
+        width: 70%;
+        height: 80%;
+    }
+    footer{
+        width: 70%;
+        height: 10%;
+        font-size: 20px;
+    }
+
+}
 body{
-    width: 100%;
-    height: 100%;
-}
-#divMenuButton{
-    float: left;
-    position: sticky;
-    height: 10%;
-    width:  10%;
-}
+        width: 100%;
+        height: 100%;
+    }
 #showBtn{
     width: 100%;
     height: 100%;
@@ -17,20 +80,14 @@ body{
     background-color: aquamarine;
 }
 header{
-    float: left;
-    position: sticky;
+    float: right;
+    position: relative;
     background-color: antiquewhite;
-    width: 90%;
-    height: 10%;
     text-align: center;
 }
 nav{
     float: left;
-    position: fixed;
     background-color: aquamarine;
-    width: 30%;
-    height: 100%;
-    font-size: 20px;
 }
 #erasmus:hover ul{
     display: block;
@@ -44,33 +101,21 @@ nav{
 #advicesAdditional{
     display: none;
 }
-
-#hideBtn{
-    float: right;
-    width: 25%;
-    height: 10%
-}
 article{
     float: left;
     background-color: coral;
-    width: 100%;
-    height: 80%;
-} 
+}
+h1, h2{
+    text-align: center;
+    text-decoration: underline;
+}
 iframe{
     width: 100%;
     height: 100%;
 }
 footer{
-    float: left;
-    text-align: center;
+    float: right;
+    position: sticky;
     background-color: antiquewhite;
-    width: 100%;
-    height: 10%;
-}
-#menu {
-  display: none;
-}
-h1, h2{
     text-align: center;
-    text-decoration: underline;
 }
