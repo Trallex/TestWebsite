@@ -5,14 +5,20 @@
         height: 10%;
         width:  10%;
     }
+  
     nav{
-        width: 30%;
+        width: 40%;
         height: 100%;
         font-size: 20px;
         position: absolute;
+        background-color: #414443
     }
-    #menu {
-      display: none;
+  
+    #menu li a{
+        font-size: 17px;
+    }
+    #menu{
+        display: none;
     }
     header{
         width: 90%;
@@ -30,40 +36,70 @@
     }    
     footer{
         width: 100%;
-        height: 10%;
+        height: 6%;
     }   
 }
+/* desktop */
 @media only screen and (min-width: 800px){
     #divMenuButton{
         display: none;
     }
+ 
     nav{
         display: block;
         width: 30%;
-        height: 60%;
+        height: 92%;
         font-size: 26px;
         position: sticky;
-        
+        background-color:#414443;
     }
+   
     #menu{
         display: block;
+    }
+    #menu li a{
+        font-size: 22px;
     }
     #hideBtn{
         display: none;
     }
     header{
         width: 70%;
-        height: 10%;
+        height: 13%;
         font-size: 32px;
     }
     article{
         width: 70%;
-        height: 80%;
+        height: 79%;
     }
     footer{
-        width: 70%;
-        height: 10%;
-        font-size: 20px;
+        width: 100%;
+        height: 8%;
+        font-size: 15px;
+    }
+    #title{
+    max-width: 80%;
+    max-height: 80%;
+    height: auto;
+    width: auto;
+    bottom: 0;
+    margin: 1% 1% auto auto;
+    
+    }
+    /* #wordcloud{
+        float: left;
+        height: 60%;
+        width: 100%;
+  
+        
+    } */
+    #wordcloud-image{
+    max-width: 100%;
+    max-height: 65%;
+    height: auto;
+    width: auto;
+    position: absolute;
+    bottom: 0;
     }
 
 }
@@ -82,12 +118,12 @@ body{
 header{
     float: right;
     position: relative;
-    background-color: antiquewhite;
-    text-align: center;
+    background-color: #2f302f;
+    text-align: right;
 }
 nav{
     float: left;
-    background-color: aquamarine;
+
 }
 #erasmus:hover ul{
     display: block;
@@ -103,7 +139,7 @@ nav{
 }
 article{
     float: left;
-    background-color: coral;
+    background-color: #414443;
 }
 h1, h2{
     text-align: center;
@@ -116,6 +152,21 @@ iframe{
 footer{
     float: right;
     position: sticky;
-    background-color: antiquewhite;
+    background-color:#20b97f;
     text-align: center;
+    color:rgb(252, 252, 252);
+    font-family: 'Courier New', Courier, monospace;
 }
+#menu ul {
+    list-style-type: none;
+    background-color:#20b97f;
+    color:rgb(252, 252, 252);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+#menu a{
+    text-decoration: none;
+    color: #414443
+}
+
+   
