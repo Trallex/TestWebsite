@@ -3,10 +3,11 @@
       <link rel="stylesheet" type="text/css" href="../photos_stylesheet.css">
   </head>
     <body>
+       <p id="para"></p>
         <ul> <table>
 
              <tr>
-                 <td> <li><img src="..\images\latada.jpg" alt="enter" onclick="funkcja(src='..\images\latada.jpg')"></li>  </td>
+                 <td> <li><img src="..\images\latada.jpg" alt="latada" onclick="funkcja(src='http://webx.ubi.pt/~a42618/project/images/latada.jpg')"></li>  </td>
                  
             </tr>
             <tr>
@@ -14,8 +15,7 @@
              </tr>    
         </table>  </ul>
         
-      <p id="para">
-    </p>
+      
 
     </body>
     <script>
@@ -34,16 +34,15 @@
     mojDiv.style.backgroundColor = 'rgba(0,0,0,0.7)';
     mojDiv.style.width = window.innerWidth + 'px';
     mojDiv.style.height = window.innerHeight + 'px';
-    //mojDiv.style.top = window.pageYOffset + 'px';
-    //mojDiv.style.left = window.pageXOffset + 'px';
           
     var foto = document.createElement('img');
     foto.id = 'large';
     foto.src = src;
     foto.style.display = 'block';
-    foto.style.position = 'absolute';
+    foto.style.position = 'fixed';
+    foto.style.width = '100%';
           
-    foto.style.left = (window.innerWidth-400)/2 + 'px';
+    //foto.style.left = (window.innerWidth-400)/16 + 'px';
             
     mojDiv.appendChild(foto);
             
