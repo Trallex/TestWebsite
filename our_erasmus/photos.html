@@ -1,0 +1,58 @@
+<html>
+ <head>
+      <link rel="stylesheet" type="text/css" href="../photos_stylesheet.css">
+  </head>
+    <body>
+        <ul> <table>
+
+             <tr>
+                 <td> <li><img src="..\images\latada.jpg" alt="enter" onclick="funkcja(src='..\images\latada.jpg')"></li>  </td>
+                 
+            </tr>
+            <tr>
+                <td> <li><img src="" alt="enter" onclick="funkcja(src='')"></li>  </td>
+             </tr>    
+        </table>  </ul>
+        
+      <p id="para">
+    </p>
+
+    </body>
+    <script>
+        function funkcja(src) {
+    
+    var paragraf = document.getElementById('para');
+    var newColor = '#f00';
+    paragraf.style.backgroundColor = newColor;
+     
+    var mojDiv = document.createElement('div');
+    mojDiv.id = 'mojDiv';
+    document.body.appendChild(mojDiv);
+          
+    mojDiv.style.position ='fixed';
+    mojDiv.style.top = '0';
+    mojDiv.style.backgroundColor = 'rgba(0,0,0,0.7)';
+    mojDiv.style.width = window.innerWidth + 'px';
+    mojDiv.style.height = window.innerHeight + 'px';
+    //mojDiv.style.top = window.pageYOffset + 'px';
+    //mojDiv.style.left = window.pageXOffset + 'px';
+          
+    var foto = document.createElement('img');
+    foto.id = 'large';
+    foto.src = src;
+    foto.style.display = 'block';
+    foto.style.position = 'absolute';
+          
+    foto.style.left = (window.innerWidth-400)/2 + 'px';
+            
+    mojDiv.appendChild(foto);
+            
+    mojDiv.addEventListener('click', function(){
+       if(mojDiv){
+          mojDiv.parentNode.removeChild(mojDiv);
+          paragraf.style.backgroundColor = '#fff';
+          }
+     }, false);
+}
+    </script>
+</html>
