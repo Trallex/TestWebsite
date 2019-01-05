@@ -7,12 +7,51 @@
         <ul> <table>
 
              <tr>
-                 <td> <li><img src="..\images\latada.jpg" alt="latada" onclick="funkcja(src='http://webx.ubi.pt/~a42618/project/images/latada.jpg')"></li>  </td>
+                 
+                 <td> <li><img src="..\images\photos\lagos1.jpg" alt="Lagos, Algarve, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/lagos1.jpg')"></li>  </td>
+                <td> <li><img src="..\images\photos\serra_de_estrela2.jpg" alt="Serra de Estrela, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/serra_de_estrela2.jpg')"></li>  </td>
+                <td> <li><img src="..\images\photos\porto3.jpg" alt="Belmonte, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/porto3.jpg')"></li>  </td>
+
+
                  
             </tr>
             <tr>
-                <td> <li><img src="" alt="enter" onclick="funkcja(src='')"></li>  </td>
-             </tr>    
+                <td> <li><img src="..\images\photos\serra_de_estrela1.jpg" alt="Serra de Estrela, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/serra_de_estrela1.jpg')"></li>  </td>
+                <td> <li><img src="..\images\photos\vila_do_carvalho.jpg" alt="Vila Do Carvalho, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/vila_do_carvalho.jpg')"></li>  </td>
+                <td> <li><img src="..\images\photos\belmonte.jpg" alt="Belmonte, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/belmonte.jpg')"></li>  </td>
+
+             </tr>  
+              <tr>
+                <td> <li><img src="..\images\photos\camels.jpg" alt="Belmonte, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/camels.jpg')"></li>  </td>
+                <td> <li><img src="..\images\photos\hassan_2_mosque1.jpg" alt="Belmonte, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/hassan_2_mosque1.jpg')"></li>  </td>               
+                <td> <li><img src="..\images\photos\hassan_2_mosque2.jpg" alt="Belmonte, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/hassan_2_mosque2.jpg')"></li>  </td>
+           </tr>
+           <tr>
+                <td> <li><img src="..\images\photos\rabat1.jpg" alt="Belmonte, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/rabat1j.pg')"></li>  </td>
+                <td> <li><img src="..\images\photos\tour_hassan.jpg" alt="Belmonte, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/tour_hassan.jpg')"></li>  </td>
+                <td> <li><img src="..\images\photos\rabat2.jpg" alt="Belmonte, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/rabat2.jpg')"></li>  </td>
+               
+           </tr>
+             
+             <tr>
+                <td> <li><img src="..\images\photos\belmonte3.jpg" alt="Belmonte, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/belmonte3.jpg')"></li>  </td>
+                <td> <li><img src="..\images\photos\belmonte1.jpg" alt="Belmonte, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/belmonte1.jpg')"></li>  </td>
+                <td> <li><img src="..\images\photos\ponta_da_piedade.jpg" alt="Ponta da Piedade, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/ponta_da_piedade.jpg')"></li>  </td>
+                
+
+           </tr>
+           <tr>
+                <td> <li><img src="..\images\photos\bom_jesus.jpg" alt="Belmonte, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/bom_jesus.jpg')"></li>  </td>
+                <td> <li><img src="..\images\photos\porto2.jpg" alt="Belmonte, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/porto2.jpg')"></li>  </td>               
+                <td> <li><img src="..\images\photos\braga.jpg" alt="Belmonte, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/braga.jpg')"></li>  </td>
+                
+           </tr>
+           <tr>
+                <td> <li><img src="..\images\photos\casablanca.jpg" alt="Belmonte, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/casablanca.jpg')"></li>  </td>  
+                <td> <li><img src="..\images\photos\sugarcane_juice.jpg" alt="Belmonte, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/sugarcane_juice.jpg')"></li>  </td>
+                <td> <li><img src="..\images\photos\majorelle_garden.jpg" alt="Belmonte, Portugal" onclick="funkcja(src='http://webx.ubi.pt/~a42552/project/images/photos/majorelle_garden.jpg')"></li>  </td>
+           </tr>
+          
         </table>  </ul>
         
       
@@ -38,9 +77,16 @@
     var foto = document.createElement('img');
     foto.id = 'large';
     foto.src = src;
+    
     foto.style.display = 'block';
     foto.style.position = 'fixed';
-    foto.style.width = '100%';
+   
+    if(foto.width>foto.height){
+        foto.style.width = '100%';
+    }
+    else{
+        foto.style.height = '100%';
+    }
           
     //foto.style.left = (window.innerWidth-400)/16 + 'px';
             

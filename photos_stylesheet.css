@@ -13,3 +13,13 @@ myDiv{
     justify-content: center;
     width: 100%;
 }
+td {
+  width:250px; 
+  height:250px; 
+  background-color: white;
+  text-align:center; 
+  vertical-align:middle";
+}
+body{
+  background-color: #2f302f;
+}

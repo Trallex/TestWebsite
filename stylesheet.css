@@ -1,50 +1,64 @@
 @media only screen and (max-width: 800px){
-    #divMenuButton{
-        float: left;
-        position: sticky;
-        height: 10%;
-        width:  10%;
-    }
   
     nav{
-        width: 40%;
-        height: 100%;
-        font-size: 20px;
-        position: absolute;
-        background-color: #414443
+        width: 100%;
+        height: 25%;
+        font-size: 15px;
+        position: sticky;
+        background-color:#20b97f;
     }
   
-    #menu li a{
-        font-size: 17px;
-    }
-    #menu{
-        display: none;
-    }
+      
+   
+      .sub{
+        width: 50%;
+      }
+     
+      li{
+        width: 100%;
+        text-align: left;
+        display: inline-block;
+        float:left;
+        
+      }
+
+     
+      .sub ul{
+        position:relative;
+        display:block;
+      }
+   
+    
+    
     header{
-        width: 90%;
+        width: 100%;
         height: 10%;
         font-size: 28px;
     }
-    #hideBtn{
-        float: right;
-        width: 25%;
-        height: 10%
-    }
+
     article{
         width: 100%;
-        height: 80%;
+        height: 60%;
     }    
     footer{
         width: 100%;
-        height: 6%;
-    }   
+        height: 5%;
+    }  
+    #wordcloud-image{
+        display:none;
+    } 
+    #title{
+        max-width: 80%;
+        max-height: 80%;
+        height: auto;
+        width: auto;
+        bottom: 0;
+        margin: 1% 1% auto auto;
+        }
+
 }
 /* desktop */
 @media only screen and (min-width: 800px){
-    #divMenuButton{
-        display: none;
-    }
- 
     nav{
         display: block;
         width: 30%;
@@ -60,9 +74,20 @@
     #menu li a{
         font-size: 22px;
     }
-    #hideBtn{
+    #erasmus:hover ul{
+        display: block;
+    }
+    
+    #advices:hover ul{
+        display: block;
+    }
+    #erasmusAdditional{
         display: none;
     }
+    #advicesAdditional{
+        display: none;
+    }
+  
     header{
         width: 70%;
         height: 13%;
@@ -84,7 +109,6 @@
     width: auto;
     bottom: 0;
     margin: 1% 1% auto auto;
-    
     }
     /* #wordcloud{
         float: left;
@@ -125,18 +149,7 @@ nav{
     float: left;
 
 }
-#erasmus:hover ul{
-    display: block;
-}
-#erasmusAdditional{
-    display: none;
-}
-#advices:hover ul{
-    display: block;
-}
-#advicesAdditional{
-    display: none;
-}
+
 article{
     float: left;
     background-color: #414443;
@@ -157,7 +170,7 @@ footer{
     color:rgb(252, 252, 252);
     font-family: 'Courier New', Courier, monospace;
 }
-#menu ul {
+#menu ul{
     list-style-type: none;
     background-color:#20b97f;
     color:rgb(252, 252, 252);
@@ -169,4 +182,3 @@ footer{
     color: #414443
 }
 
-   
