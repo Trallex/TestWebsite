@@ -10,8 +10,10 @@ p{
   font-size: 1.5em;
 }
 myDiv{
-    justify-content: center;
-    width: 100%;
+    text-align: center;
+    margin: auto;
+    height: auto;
+    width: auto;
 }
 td {
   width:250px; 
