@@ -37,3 +37,8 @@ body{
         font-size: 28px;
     }
 }
+h1{
+    text-align: left;
+    color:#20b97f;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
