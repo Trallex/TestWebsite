@@ -1,6 +1,9 @@
 ul{
   list-style: none;
 }
+li{
+    display: inline-flex;
+}
 
 li img{
     height: 200px;
