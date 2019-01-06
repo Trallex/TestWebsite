@@ -192,6 +192,7 @@ body{
     color:rgb(209, 191, 191);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 17px;
+    margin: auto;
 }
 iframe{
     width: 100%;
