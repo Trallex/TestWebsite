@@ -241,12 +241,17 @@ footer{
   table{
     margin-bottom: 10%;
   }
-    #our-photos td{
+#our-photos td{
         text-align:center; 
         width:350px;
         height:350px; 
     }
-    #our-description{
+#our-description{
         text-align:center; 
     }
-   
+.footer-links{
+    color:rgb(233, 120, 120);
+}
+footer-links:visited{
+    color:rgb(243, 155, 155);
+}
