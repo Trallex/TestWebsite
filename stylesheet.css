@@ -8,7 +8,7 @@
         background-color:#20b97f;
     }
    
-      .sub{
+      .sub-menu{
         width: 50%;
       }
      
@@ -20,11 +20,11 @@
         
       }
 
-      .sub ul{
+      .sub-menu ul{
         position:relative;
         display:block;
       }
-      h1{
+    h1{
         font-size: 20px;
     }
     h2{
@@ -92,6 +92,7 @@
     #advicesAdditional{
         display: none;
     }
+   
   
     header{
         width: 70%;
@@ -131,7 +132,6 @@
         width: 100%;
         position: absolute;
         bottom: 0;
-    
     }
     #wordcloud-image{
     max-width: 100%;
@@ -148,14 +148,7 @@ body{
         height: 100%;
 
     }
-#showBtn{
-    width: 100%;
-    height: 100%;
-    background-color: antiquewhite;
-}
-#showBtn:active{
-    background-color: aquamarine;
-}
+
 header{
     float: right;
     position: relative;
@@ -199,8 +192,6 @@ body{
     color:rgb(209, 191, 191);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 17px;
-    
-
 }
 iframe{
     width: 100%;
@@ -231,13 +222,12 @@ footer{
 #useful-links li a:visited{
     color:rgb(243, 155, 155);
 }
-
 .our-image{
     max-height: 100%;
     height: auto;
     width: auto;
     
-    }
+}
   table{
     margin-bottom: 10%;
   }
@@ -252,6 +242,6 @@ footer{
 .footer-links{
     color:rgb(233, 120, 120);
 }
-footer-links:visited{
+.footer-links:visited{
     color:rgb(243, 155, 155);
 }
